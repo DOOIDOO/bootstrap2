@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>latihan</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  </head>
+  <body>
+    <!-- nav start -->
+    <nav class="navbar navbar-expand-lg bg-primary-subtle navbar-dark">
+      <div class="container pt-2 fw-bolder">
+        <a class="navbar-brand" href="#">
+          <img src="assets/images/nike.png" alt="Bootstrap" width="80" height="30" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav mx-5 gap-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Dropdown link </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <button type="button" class="btn btn-light position-absolute end-0 mx-md-5 mt-md-auto mx-3 mt-3">Notif <span class="badge bg-primary">4</span></button>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- nav end  -->
+    <nav
+      style="--bs-breadcrumb-divider: url(&#34;data:image/svg + xml, %3Csvgxmlns='http://www.w3.org/2000/svg'width='8'height='8'%3E%3Cpathd='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z'fill='%236c757d'/%3E%3C/svg%3E&#34;)"
+      aria-label="breadcrumb"
+    >
+      <ol class="mx-4 breadcrumb ">
+        <li class="breadcrumb-item"><a style="text-decoration: none; font-size: large; font-weight: 500; color: black" href="#">Home</a></li>
+        <li class="breadcrumb-item">
+          <a style="text-decoration: none; font-size: large; font-weight: 500; color: black" href="#"
+            ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" /></svg
+          ></a>
+        </li>
+
+        <li class="mt-0 breadcrumb-item active" aria-current="page" style="text-decoration: none; font-size: larger; font-weight: 600; color: black">Product</li>
+      </ol>
+    </nav>
+
+    <div class="play">
+      <div class="product shadow-lg"></div>
+      <div></div>
+    </div>
+
+    <div>
+      <section>
+        <h3 class="font-monospace text-center mt-md-3">Nike Shoes</h3>
+        <h4 class="font-monospace text-center"><em>250$</em></h4>
+      </section>
+
+      <section class="" id="nomor">
+        <ul class="list-group list-group-horizontal mx-auto justify-content-center">
+          <li class="list-group me-2">
+            <a href="2.html"><button class="btn btn-outline-primary pisit">40</button></a>
+            </li>
+            <li class="list-group me-2 ms-2">
+            <a href="3.html"><button class="btn btn-outline-primary pisit">41</button></a>
+              
+            </li>
+            <li class="list-group ms-2">
+              <button class="btn btn-primary">42</button>
+            </li>
+          </ul>
+          <ul class="list-group list-group-horizontal mx-auto justify-content-center mt-2">
+            <li class="list-group me-2">
+              <div id="liveAlertPlaceholder"></div>
+              <button type="button" class="btn btn-primary" id="liveAlertBtn">Click Here To Buy It Now</button>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div id="sudah">
+        <div class="alert alert-success alert-dismissible fade show w-25  mx-auto" role="alert">
+          <strong><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+            <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+          </svg>Product Buyed</strong> You buyed nike shoes with 42 size
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>  
+      </div>
+      <div class="accordion accordion-flush  w-25 mx-auto mt-2" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+             About Nike
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Nike's business strategy is straightforward: engage in brand creation through emotional marketing and sports star endorsements, manufacture products with high-quality, market-leading technology, and acquire competitive sports brands. Nike's swoosh dominates the footwear industry.</div>
+          </div>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script>
+      const alertPlaceholder = document.getElementById("liveAlertPlaceholder");
+      const number = document.getElementById("nomor");
+      const sudah = document.getElementById("sudah");
+      sudah.style.display = "none";
+      const appendAlert = (message, type) => {
+        const wrapper = document.createElement("div");
+        wrapper.innerHTML = [`<div class="alert alert-${type} alert-dismissible" role="alert">`, `   <div>${message}</div>`, '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>', "</div>"].join(
+          ""
+        );
+
+        alertPlaceholder.append(wrapper);
+      };
+
+      const alertTrigger = document.getElementById("liveAlertBtn");
+      if (alertTrigger) {
+        alertTrigger.addEventListener("click", () => {
+          appendAlert("Nice, you triggered this alert message!", "primary");
+          alert("Succes");
+          number.style.display = "none";
+          sudah.style.display = "block"
+        });
+      }
+    </script>
+  </body>
+</html>
